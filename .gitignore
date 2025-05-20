@@ -1,0 +1,22 @@
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+/.vs
+obj/
+bin/
+build/
+Debug/
+Release/
+
+*.log
+*.pch
+*.pdb
+
+# Otros
+*.tmp
+*.swp
