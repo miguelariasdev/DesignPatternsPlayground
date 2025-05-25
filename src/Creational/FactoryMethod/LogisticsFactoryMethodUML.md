@@ -5,9 +5,9 @@ classDiagram
     direction LR
 
     class Logistics {
-        +string PlanDelivery(CargoType, string)
-        #ITransport CreateTransport()
-        #string PerformPreChecks()
+        +PlanDelivery()
+        #CreateTransport()
+        #PerformPreChecks()
     }
 
     class RoadLogistics
@@ -15,21 +15,24 @@ classDiagram
     Logistics <|-- RoadLogistics
     Logistics <|-- SeaLogistics
 
-    interface ITransport {
-        +string Deliver(CargoType, string)
+    class ITransport {
+        <<interface>>
+        +Deliver()
     }
 
     class Truck {
-        +string Deliver(CargoType, string)
-        -string CheckTruckCondition()
+        +Deliver()
+        -CheckTruckCondition()
     }
+
     class Ship {
-        +string Deliver(CargoType, string)
+        +Deliver()
     }
     ITransport <|.. Truck
     ITransport <|.. Ship
 
-    enum CargoType {
+    class CargoType {
+        <<enumeration>>
         Electronics
         Food
         ConstructionMaterials
