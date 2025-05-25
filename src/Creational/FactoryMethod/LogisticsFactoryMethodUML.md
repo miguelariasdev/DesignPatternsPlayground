@@ -1,4 +1,7 @@
-﻿classDiagram
+﻿# Factory-Method – class diagram
+
+```mermaid
+classDiagram
     direction LR
 
     class Logistics {
