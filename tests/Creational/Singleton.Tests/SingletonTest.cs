@@ -1,6 +1,6 @@
 ﻿namespace Singleton.Tests;
 
-public class UnitTest1
+public class SingletonTest
 {
     [Fact]
     public void Instance_Should_Return_Same_Reference()
