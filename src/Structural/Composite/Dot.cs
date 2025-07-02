@@ -5,7 +5,7 @@ namespace Composite
     // A leaf object can't have any sub-objects. Usually, it's leaf
     // objects that do the actual work, while composite objects only
     // delegate to their sub-components.
-    internal class Dot : IGraphic
+    public class Dot : IGraphic
     {
         public int X { get; private set; }
 

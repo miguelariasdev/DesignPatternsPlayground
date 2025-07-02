@@ -1,6 +1,4 @@
-﻿using Strategy;
-using Strategy.ConcreteStrategies;
-using Xunit;
+﻿using Strategy.ConcreteStrategies;
 
 namespace Strategy.Tests;
 
